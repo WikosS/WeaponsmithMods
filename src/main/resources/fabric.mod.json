@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "weaponsmith",
+  "version": "${version}",
+  "name": "Weaponsmith",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Nicolas/Weaponsmith"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/Weaponsmith/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.wikos.weaponsmith.client.WeaponsmithClient"
+    ],
+    "main": [
+      "org.wikos.weaponsmith.Weaponsmith"
+    ]
+  },
+  "mixins": [
+    "Weaponsmith.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
