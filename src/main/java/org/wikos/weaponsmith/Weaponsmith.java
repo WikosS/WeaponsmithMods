@@ -6,13 +6,14 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import org.wikos.weaponsmith.item.Oils;
 
 
 public class Weaponsmith implements ModInitializer {
     /**
      * Runs the mod initializer.
      */
-    public static final Item UNDEAD_OILS = new Item(new FabricItemSettings());
+    public static final Item UNDEAD_OILS = new Oils(new FabricItemSettings());
     @Override
     public void onInitialize() {
         Registry.register(Registries.ITEM, new Identifier("weaponsmith", "undead_oils"), UNDEAD_OILS);
